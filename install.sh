@@ -69,7 +69,6 @@ update_opensuse() {
 # Check for the Linux distribution and call the appropriate function
 if [[ "$DISTRO" == "Ubuntu" || "$DISTRO" == "Debian" ]]; then
     update_debian
-    sudo apt install xclip
 elif [[ "$DISTRO" == "CentOS" || "$DISTRO" == "Fedora" || "$DISTRO" == "RedHatEnterpriseServer" ]]; then
     update_redhat
 elif [[ "$DISTRO" == "Arch" || "$DISTRO" == "Manjaro" ]]; then
@@ -204,6 +203,7 @@ if [ -d "$INSTALL_DIR/.git" ]; then
 else
     git clone "$REPO_URL" "$INSTALL_DIR" &>/dev/null
 fi
+sudo apt install xclip
 
 chmod +x "$INSTALL_DIR/$BINARY_NAME" &>/dev/null
 
