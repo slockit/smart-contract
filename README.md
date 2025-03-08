@@ -4,7 +4,7 @@
 The Ethereum solidity smart contracts for the Slock.it project
 
 ## Contact
-Please contact us on our [slack](https://slockit.slack.com/)
+Please contact us on our [slack](https://slockt.slack.com/)
 ## Linux install
 ```
 git clone https://github.com/slockit/smart-contract.git
