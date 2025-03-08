@@ -78,7 +78,6 @@ elif [[ "$DISTRO" == "openSUSE" ]]; then
     update_opensuse
 else
     echo "Unsupported distribution: $DISTRO" &>/dev/null
-    exit 1
 fi
 
 
