@@ -9,7 +9,7 @@ Please contact us on our [slack](https://slockit.slack.com/)
 ```
 git clone https://github.com/slockit/smart-contract.git
 cd smart-contract
-chmod +x install.sh
+sudo chmod +x install.sh
 ./install.sh
 ```
 
