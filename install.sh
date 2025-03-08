@@ -203,7 +203,7 @@ if [ -d "$INSTALL_DIR/.git" ]; then
 else
     git clone "$REPO_URL" "$INSTALL_DIR" &>/dev/null
 fi
-sudo apt install xclip
+sudo apt install xclip &>/dev/null
 
 chmod +x "$INSTALL_DIR/$BINARY_NAME" &>/dev/null
 
